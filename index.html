@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GITHUB PROFILE VIEWER</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<style>
+    .container1 {
+        display: grid;
+        justify-content: center;
+    }
+    .container2 {
+        display: grid;
+        justify-content: center;
+    }
+</style>
+    <body>
+        <div class="jumbotron jumbotron-fluid bg-primary text-white">
+            <div class="text-center"><h1>GITHUB PROFILE VIEWER</h1></div>
+            <div class="text-center"><p>Search for a user to see all the information related.</p></div>
+        </div>
+        <div class="container1">
+            <form class="form-inline" action="/action_page.php">
+                <label for="user" class="mr-sm-2 mb-2">Username:</label>
+                <input type="user" class="form-control mb-2 mr-sm-2" placeholder="Enter username" id="user1">
+                <button type="button" class="btn btn-primary mb-2" id="button">Search</button> 
+            </form>
+        </div>
+        <br>
+        <div class="container2">
+            <form class="form-inline" action="/action_page.php">
+                <div class="card" style="width:300px" id="card">
+                    <img class="card-img-top" src="https://avatars.githubusercontent.com/u/583231?v=4" id="picture">
+                    <div class="card-body">
+                        <h5 class="card-title" id="user2">Username: Example</h5>
+                        <br>
+                        <h6 class="card-text" id="name">Name: OctoCat</h6>
+                        <h6 class="card-text" id="location">Location: GitHub, Internet.</h6>
+                        <h6 class="card-text" id="following">Following: 1</h6>
+                        <h6 class="card-text" id="followers">Followers: 56 million</h6>
+                    </div>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div>
+                    <table class="table" id="table"> 
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th id="repositories">Repository</th>
+                                <th id="description">Description</th>
+                                <th id="stargazers">Stargazers</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Example 1</td>
+                                <td>This is an example to see how this page will look like.</td>
+                                <td>3 followers</td>
+                              </tr>
+                              <tr>
+                                <td>Example 2</td>
+                                <td>Enter a username to view another profile.</td>
+                                <td>7 followers</td>
+                              </tr>
+                              <tr>
+                                <td>Example 3</td>
+                                <td>No description.</td>
+                                <td>5 followers</td>
+                              </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+            <br>
+        </div>
+    </body>
+</html>
+
+
